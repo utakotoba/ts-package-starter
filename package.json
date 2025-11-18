@@ -16,19 +16,21 @@
   },
   "keywords": [],
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
@@ -37,6 +39,7 @@
     "jiti": "^2.6.1",
     "lint-staged": "^16.2.6",
     "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.16.5",
     "typescript": "^5.9.3"
   },
   "simple-git-hooks": {
