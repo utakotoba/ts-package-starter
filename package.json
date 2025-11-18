@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1.0-dev.1",
   "private": true,
-  "description": "Project template for TypeScript package",
+  "description": "Project template for single TypeScript package",
   "author": "Kohane <i@kept.to>",
   "license": "MIT",
   "homepage": "https://github.com/utakotoba/ts-package-starter#readme",
