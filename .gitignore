@@ -7,3 +7,6 @@ dist
 # logs
 logs
 *.log
+
+# os-related
+.DS_Store
