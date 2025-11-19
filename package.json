@@ -1,7 +1,7 @@
 {
   "name": "@aimless/ts-package-starter",
   "type": "module",
-  "version": "0.1.0-dev.0",
+  "version": "0.1.0-dev.1",
   "description": "Project template for single TypeScript package",
   "author": "Kohane <i@kept.to>",
   "license": "MIT",
