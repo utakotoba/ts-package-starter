@@ -6,8 +6,13 @@ on:
       - 'v*'
 
 jobs:
+  typecheck:
+    name: Typecheck
+    uses: ./.github/workflows/typecheck.yml
   release:
+    name: Release
     runs-on: ubuntu-latest
+    needs: [typecheck]
     permissions:
       id-token: write
       contents: write
