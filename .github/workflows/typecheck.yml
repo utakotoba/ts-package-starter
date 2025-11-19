@@ -2,6 +2,8 @@ name: Typecheck
 
 on:
   push:
+    tags-ignore:
+      - 'v*'
   pull_request:
   workflow_call:
 
