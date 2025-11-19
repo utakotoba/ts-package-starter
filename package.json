@@ -5,9 +5,6 @@
   "description": "Project template for single TypeScript package",
   "author": "Kohane <i@kept.to>",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "homepage": "https://github.com/utakotoba/ts-package-starter#readme",
   "repository": {
     "type": "git",
