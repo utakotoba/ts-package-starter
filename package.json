@@ -1,50 +1,41 @@
 {
   "name": "@aimless/ts-package-starter",
-  "type": "module",
-  "version": "0.1.0-dev.1",
+  "version": "0.1.0",
   "description": "Project template for single TypeScript package",
-  "author": "Kohane <i@kept.to>",
-  "license": "MIT",
+  "keywords": [],
   "homepage": "https://github.com/utakotoba/ts-package-starter#readme",
+  "bugs": {
+    "url": "https://github.com/utakotoba/ts-package-starter/issues"
+  },
+  "license": "MIT",
+  "author": "Yu <i@alphayou.io>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/utakotoba/ts-package-starter.git"
   },
-  "bugs": {
-    "url": "https://github.com/utakotoba/ts-package-starter/issues"
-  },
-  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "prepare": "simple-git-hooks",
-    "typecheck": "tsc --noEmit",
-    "dev": "tsdown --watch",
+    "fmt": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "test": "vitest run",
     "build": "tsdown",
-    "prepublishOnly": "bun run build"
+    "publish:ci": "pnpm publish --access public --no-git-checks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.7.3",
-    "bun": "^1.3.8",
-    "eslint": "^9.39.2",
-    "jiti": "^2.6.1",
-    "lint-staged": "^16.2.7",
-    "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.16.8",
-    "typescript": "^5.9.3"
+    "oxfmt": "^0.55.0",
+    "oxlint": "^1.70.0",
+    "oxlint-tsgolint": "^0.23.0",
+    "tsdown": "^0.22.3",
+    "vitest": "^4.1.9"
   },
-  "simple-git-hooks": {
-    "pre-commit": "bun run lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
-  }
+  "packageManager": "pnpm@11.6.0"
 }

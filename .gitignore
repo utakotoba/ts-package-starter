@@ -1,12 +1,11 @@
 # dependencies
 node_modules
 
-# build
+# development
 dist
 
-# logs
-logs
-*.log
+# preferences
+/.zed
 
 # os-related
 .DS_Store

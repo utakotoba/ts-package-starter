@@ -2,6 +2,10 @@ import { defineConfig } from 'tsdown'
 
 export default defineConfig({
   entry: 'src/index.ts',
-  dts: true,
+  format: 'es',
+  dts: {
+    oxc: true,
+    sourcemap: true,
+  },
   exports: true,
 })
