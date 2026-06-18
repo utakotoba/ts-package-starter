@@ -1,12 +1,9 @@
 ### @utakotoba's TypeScript single package starter
 
-This template **includes**:
+Make things happen.
 
-- Basic linter & formatter toolchains
-- Git hooks setup
-- GitHub Action workflow setup for releasing the package
+### License
 
-Toolchains:
+Copyright © 2026 Yu
 
-- Linter & formatter: [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config)
-- Bundler: [TSDown](https://tsdown.dev)
+Open sourced under [MIT license](./LICENSE).
