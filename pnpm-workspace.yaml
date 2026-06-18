@@ -1,0 +1,29 @@
+# MARK: - workspace
+packages:
+  - lib
+
+# MARK: - deps
+catalogs:
+  tooling:
+    bumpp: ^11.1.0
+    oxfmt: ^0.55.0
+    oxlint: ^1.69.0
+    oxlint-tsgolint: ^0.23.0
+    tsdown: ^0.22.2
+    vitest: ^4.1.8
+
+# MARK: - supply chain hardening
+minimumReleaseAgeStrict: true
+minimumReleaseAgeIgnoreMissingTime: false
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  # tracked at https://github.com/tinylibs/tinyexec/issues/136
+  - tinyexec@1.2.2
+
+# MARK: - dependency settings
+strictPeerDependencies: true
+engineStrict: true
+nodeVersion: 24.16.0
+
+# MARK: - misc
+shellEmulator: true

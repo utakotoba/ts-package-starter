@@ -1,41 +1,21 @@
 {
-  "name": "@aimless/ts-package-starter",
   "version": "0.1.0",
-  "description": "Project template for single TypeScript package",
-  "keywords": [],
-  "homepage": "https://github.com/utakotoba/ts-package-starter#readme",
-  "bugs": {
-    "url": "https://github.com/utakotoba/ts-package-starter/issues"
-  },
-  "license": "MIT",
-  "author": "Yu <i@alphayou.io>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/utakotoba/ts-package-starter.git"
-  },
-  "files": [
-    "dist"
-  ],
+  "private": true,
   "type": "module",
-  "types": "./dist/index.d.mts",
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./package.json": "./package.json"
-  },
   "scripts": {
     "fmt": "oxfmt",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "test": "vitest run",
     "build": "tsdown",
-    "publish:ci": "pnpm publish --access public --no-git-checks"
+    "publish:ci": "pnpm -r publish --access public --no-git-checks"
   },
   "devDependencies": {
-    "oxfmt": "^0.55.0",
-    "oxlint": "^1.70.0",
-    "oxlint-tsgolint": "^0.23.0",
-    "tsdown": "^0.22.3",
-    "vitest": "^4.1.9"
+    "oxfmt": "catalog:tooling",
+    "oxlint": "catalog:tooling",
+    "oxlint-tsgolint": "catalog:tooling",
+    "tsdown": "catalog:tooling",
+    "vitest": "catalog:tooling"
   },
   "packageManager": "pnpm@11.6.0"
 }

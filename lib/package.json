@@ -1,0 +1,25 @@
+{
+  "name": "@aimless/ts-package-starter",
+  "version": "0.1.0",
+  "description": "Project template for single TypeScript package",
+  "keywords": [],
+  "homepage": "https://github.com/utakotoba/ts-package-starter#readme",
+  "bugs": {
+    "url": "https://github.com/utakotoba/ts-package-starter/issues"
+  },
+  "license": "MIT",
+  "author": "Yu <i@alphayou.io>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utakotoba/ts-package-starter.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  }
+}
